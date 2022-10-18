@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../PaginaLogin/style.css">
+    <link rel="shortcut icon" href="../images/school-icon-48-167477.png" type="image/x-icon">
+    <link rel="stylesheet" href="./criarConta.css">
+    
+    <title>Criar Conta</title>
+</head>
+
+<body>
+    <div class="container container-layout d-flex justify-content-center align-items-center">
+
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-10 col-lg-6">
+
+                <div class="container">
+                    <form class="row mt-5 d-flex justify-content-center align-items-center" id="formulario" action="">
+                        <div class="text-center"> 
+                            <img src="../images/User.png" alt="Imagem de Usuário" srcset="" class="img-fluid userImg">
+                        </div>
+
+                        <div class="title text-center">
+                            <h1>Criar Conta</h1>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-floating p-1">
+                                <input 
+                                type="text" 
+                                class="form-control" 
+                                id="username" 
+                                placeholder="name@exemplo.com" 
+                                name="name"
+                                required
+                                >
+                                <div class="valid-feedback">Nome de usuário Preenchido</div>
+                                <div class="invalid-feedback">Preencha o Nome de Usuário</div>
+                                <label for="input-name">Nome de Usuário</label>
+                            </div>                            
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-floating p-1">
+                                <input type="password"
+                                class="form-control"
+                                id="password1"
+                                placeholder="Password"
+                                name="password"
+                                required>
+                                <div class="valid-feedback">Senha preenchida.</div>
+                                <div class="invalid-feedback">Preencha a senha.</div>
+                                <label for="input-password">Senha</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-floating p-1">
+                                <input type="password"
+                                class="form-control"
+                                id="password2"
+                                placeholder="Password"
+                                name="password"
+                                required>
+                                <div class="valid-feedback">Senha Confirmada</div>
+                                <div class="invalid-feedback">Confirme a senha</div>
+                                <label for="input-password">Repita a Senha</label>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 col-6 mx-auto p-1 text-center">
+                            <button class="btn btn-primary" id="btn" type="submit">Criar Conta</button>
+                            <a href="../PaginaLogin/index.html">  <button class="btn btn-dark" type="button">Voltar</button></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../PaginaCriarConta/criarConta.js"></script>
+</body>
+</html>

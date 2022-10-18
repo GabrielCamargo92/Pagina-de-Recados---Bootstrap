@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+
+body{
+    font-family: "Indie Flower", cursive;
+    background-image: url(../images/750702.jpg);
+    background-size:auto;
+    animation: fundo 5s ease 0s 1 normal forwards;
+}
+@keyframes fundo {
+        0% {
+            background-position: 100% 50%;
+        }
+    
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+
+tr:hover {background-color: rgba(186, 184, 184, 0.23);}
+
+.titulo{
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+.barraHashtag{
+    width: 10%;
+    text-align: center;
+}
+
+.barraDescricao{
+    width: 24%;
+    text-align: center;
+
+}
+
+.barraDetalhamento{
+    width: 26%;
+    text-align: center;
+
+}
+
+.barraAcoes{
+    width: 10%;
+    text-align: center;
+}
+
+.recado-item{
+    text-align: center;
+}
+
+.textAreaDescricao{
+    width: 98%;
+    margin: 3px;
+    height: 40%;
+    border-radius: 10px;
+}
+
+
+.textAreaDetalhamento{
+    width: 98%;
+    margin: 3px;
+    height: 40%;
+    border-radius: 10px;
+}
+
+
+.btnEdit{
+    background-color: rgb(6, 0, 128);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+}
+
+.btnEdit:hover{
+    opacity: 0.6;
+}
+
+.btnRemove{
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    margin-right: 3px;
+}
+
+.btnRemove:hover{
+    opacity: 0.6;
+}
+
+.backGroundModal{
+    width: 100%;
+    height: 100%;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.containerModal{
+    
+    width: 30rem;
+    height: 30rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.btnFecharModal{
+    font-size: 1.2em;
+    width: 40px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 50%;
+    background-color: #9E1517;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    animation: rotation 1s ease 0s infinite normal forwards;
+}
+@keyframes rotation {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.containerDiv{
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, aqua, blue);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+}
+
+.tituloModal{
+    font-size: 2vh 500;
+    margin-left: 3.5vh;
+    line-height: 2.8vh;
+    margin-top: 20px
+}
+
+.editeArea{
+    background-image: linear-gradient(to right, aqua, blue);
+    box-shadow: 1px 1px 5px rgb(4, 3, 3);
+    width: 90%;
+    height: 70%;
+}
+
+.btnSalvarEdicao{
+    padding: 5px;
+    color: white;
+    margin: auto;
+    width: inherit;
+    border: 5px;
+    border-radius: 30px;
+    background-image: lavender;
+    background-image: linear-gradient(45deg, black, rgb(11 169 216));
+}
+
+.btnSalvarEdicao:hover{
+    background-image: linear-gradient(to left, aqua, rgb(23, 255, 104));
+}
+
+
+.tituloModal{
+    font-family: cursive;
+}
